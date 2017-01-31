@@ -25,7 +25,7 @@ C.	Middlewares
 
 D.	ORM
 	Contains eloquent models, transformers from eloquents to entities, and Implementation of repo interface.
-	If the databases change/and eloquent as well, it wont be needed (the whole folder).
+	If the this domain use ODM, then this one won't be used.
 
 		Contoh : https://github.com/chelsymooy/ddd_nasabah/tree/master/ORM	
 
