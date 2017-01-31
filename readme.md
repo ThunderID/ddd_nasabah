@@ -16,13 +16,11 @@
 ##FOLDER STRUCTURE##
 ###CQRS (Considered as service)###
 	Accessible from Presentation layer. Collaborating middleware (authorization) and repositories.
-		
-		`https://github.com/chelsymooy/ddd_nasabah/blob/master/CQRS/NasabahService.php`	
+	[Contoh](https://github.com/chelsymooy/ddd_nasabah/blob/master/CQRS/NasabahService.php) 
 
 ###Entities###
 	Business Entities. Accessible from everywhere, normally called in repository.
-
-		`https://github.com/chelsymooy/ddd_nasabah/blob/master/Entities/Nasabah.php`
+	[Contoh](https://github.com/chelsymooy/ddd_nasabah/blob/master/Entities/Nasabah.php) 
 
 ###Middlewares###
 	Going to be used as authorization policies.
@@ -30,13 +28,11 @@
 ###ORM###
 	Contains eloquent models, transformers from eloquents to entities, and Implementation of repo interface.
 	If the this domain use ODM, then this one won't be used.
-
-		`https://github.com/chelsymooy/ddd_nasabah/tree/master/ORM`
+	[Contoh](https://github.com/chelsymooy/ddd_nasabah/tree/master/ORM) 
 
 ###Repositories###
 	Only contains basic iface repo class going to be called in service (CQRS).
-
-		`https://github.com/chelsymooy/ddd_nasabah/blob/master/Repositories/InterfaceRepositoryNasabah.php`
+	[Contoh](https://github.com/chelsymooy/ddd_nasabah/blob/master/Repositories/InterfaceRepositoryNasabah.php) 
 
 ###ValueObjects###
 	Something going to be used generally (normally used by entities).
@@ -49,5 +45,4 @@
 
 ###NasabahServiceProvider###
 	So, here is where every needed configuration placed. And the main function of SP, is... BINDING Repositories Interfaces to ORM Repositories / whatsoever the driver might be.
-
-		`https://github.com/chelsymooy/ddd_nasabah/blob/master/NasabahServiceProvider.php`
+	[Contoh](https://github.com/chelsymooy/ddd_nasabah/blob/master/NasabahServiceProvider.php) 
